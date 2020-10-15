@@ -6,7 +6,7 @@ const con = document.querySelector('.container');
 
 const toDoit = (event) =>{
     event.preventDefault();
-    let yo = todo.value;
+    
     const aTodos = document.createElement("div");
     aTodos.classList.add("todos");
     con.appendChild(aTodos);
@@ -15,12 +15,12 @@ const toDoit = (event) =>{
     // todolist
     const aparTodo = document.createElement("p");
     aparTodo.classList.add("par-todo");
-    aparTodo.innerText = yo;
+    aparTodo.innerText = todo.value;
     aTodos.appendChild(aparTodo);
-};
-const clearIn = () =>{
+
     todo.value = "";
-}
+};
+
 
 addBtn.addEventListener('click',toDoit);
-clearIn();
+
