@@ -26,25 +26,25 @@ h1{
     padding: 1.5rem 0;
     background-color: #794c74;
 }
+button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+
 .container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 420px;
-    text-align: center;
 }
+
 #addBtn{
-    display: inline-block;
     padding: 10px 15px;
     font-size: 20px;
-    -webkit-appearance: none;
-    border: none;
     background-color: white;
     color:#c56183;
     border:none;
-    outline: none;
-    cursor: pointer;
     transition: all 0.5s ease;
 }
 #addBtn:hover{
@@ -63,3 +63,32 @@ input{
 input:focus::placeholder {
     color: transparent;
   }
+.todos{
+    max-width: 500px;
+    /* height: 50px; */
+    padding: 15px;
+    margin-top: 30px;
+    background-color: teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.par-todo{
+    font-size: 1rem;
+    color: white;
+}
+
+.groupBtn i{
+    font-size: 12px;
+    color: teal;
+    padding: 4px;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.groupBtn i:hover{
+    -webkit-box-shadow: 1px 1px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 10px -1px rgba(0,0,0,0.75);
+}
