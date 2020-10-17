@@ -82,7 +82,12 @@ input:focus::placeholder {
     font-size: 1rem;
     color: white;
 }
-
+/* .groupBtn{
+    display: none;
+}
+.groupBtn .active{
+    display: block;
+} */
 .groupBtn i{
     font-size: 12px;
     color: teal;

@@ -18,7 +18,28 @@ const toDoit = (event) =>{
         aparTodo.classList.add("par-todo");
         aparTodo.innerText = todo.value;
         aTodos.appendChild(aparTodo);
-    
+        
+        //btn group
+
+        const btncont = document.createElement("div");
+        btncont.classList.add("groupBtn");
+        aTodos.appendChild(btncont);
+
+        //btns
+
+        const btnCompl = document.createElement("button");
+        btnCompl.innerHTML = '<i class="fas fa-check"></i>';
+        btnCompl.id = "btnCom";
+        btncont.appendChild(btnCompl);
+
+
+        const btnDelet = document.createElement("button");
+        btnDelet.innerHTML = '<i class="fas fa-times"></i>';
+        btnDelet.id = "btnDel";
+        btncont.appendChild(btnDelet);
+
+
+
         todo.value = "";
         msg.innerText = "";
     }else{
