@@ -52,21 +52,20 @@
               });
             
             
-    
             const btnDelet = document.createElement("button");
             btnDelet.innerHTML = '<i class="fas fa-times"></i>';
             btnDelet.setAttribute("id", "btnDel"); 
             btncont.appendChild(btnDelet);
               
 
-            btnDel.addEventListener('click',()=>{
+            btnDelet.addEventListener('click',()=>{
                 aTodos.style.display = "none";
               });
             
             todo.value = "";
             msg.innerText = "";
 
-            
+
         }else{
            msg.innerText = "Please enter a To do first..."
         }
