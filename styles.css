@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     position: relative;
     width: 100%;
@@ -64,9 +65,11 @@ input{
     outline: none;
     max-width: 600px;
 }
+
 input:focus::placeholder {
     color: transparent;
   }
+
 .todos{
     max-width: 500px;
     /* height: 50px; */
@@ -76,7 +79,6 @@ input:focus::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .par-todo{

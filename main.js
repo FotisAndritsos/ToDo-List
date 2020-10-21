@@ -1,17 +1,3 @@
-
-
- 
-   
-
-    
-    
-
- 
-
-   
-    
- 
-
     const btnDel = document.getElementById('bntDel');
     const addBtn = document.getElementById('addBtn');
     const todo = document.getElementById('todo');
